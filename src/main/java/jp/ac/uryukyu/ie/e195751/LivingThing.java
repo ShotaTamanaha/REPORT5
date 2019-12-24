@@ -7,6 +7,7 @@ package jp.ac.uryukyu.ie.e195751;
  *  int attack; //攻撃力
  *  boolean dead; //生死状態。true=死亡。
  * Created by tnal on 2016/11/13.
+ *
  */
 public class LivingThing {
     private String name;
@@ -58,7 +59,7 @@ public class LivingThing {
     /**
      * 自身へ攻撃されたときのダメージ処理をするメソッド。
      * 指定されたダメージを hitPoint から引き、死亡判定を行う。
-     * @param damage 受けたダメージ
+     * @param damage
      */
     public void wounded(int damage){
         hitPoint -= damage;
